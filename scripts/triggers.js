@@ -7,7 +7,9 @@ class Trigger{
     this.event = event;
     this.debug = debug;
     if(this.debug){
-      this.debug = game.add.sprite(50, 50, 'trigger');
+      this.debug = game.add.sprite(50, 50, 'coin');
+      this.debug.animations.add('rotate')
+      this.debug.animations.play('rotate' , 15, true)
       console.log("triggerDebugCreated");
     }
     this.triggered = false;
