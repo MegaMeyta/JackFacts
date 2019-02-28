@@ -25,6 +25,7 @@ function preload() {
   game.load.spritesheet('trigger', 'images/jf2small.png', 50, 50, 1);
   game.load.spritesheet('msgBox', 'images/Light-Blue-Box.jpg', 450, 150, 1);
   game.load.spritesheet('speaker', 'images/Square.jpg', 80, 100, 1);
+  game.load.spritesheet('coin', 'images/coin.jpg', 50,50);
   game.load.audio('music', music);
 
   game.load.bitmapFont('gem', 'gem.png', 'images/gem.xml');
