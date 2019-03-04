@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <body>
 <style>
 body{
   text-align: center;
 }
-
 p {
   color: black;
   font-family: courier;
 }
 </style>
 </body>
-
-<main>
-<style>
-  .levels: {
-  padding: 5px 5px;
-  background-color: #000000;
-  width: 2000px;
-}
-</style>
-</main>
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -31,7 +18,6 @@ body {
   background-color: #303238;
   text-align: center;
 }
-
 h1 {
   color: #abd92f;
   font-family: courier;
@@ -48,7 +34,6 @@ h3 {
 	font-size: 30px;
   text-decoration: none;
 }
-
 h4 {
   color: #000000;
   font-family: courier;
@@ -57,14 +42,12 @@ h4 {
 }
 </style>
 </head>
-
 <div>
 <style>
 *{
   margin: 0 auto;
   padding: 0;
 }
-
 #rcorners1 {
   text-align: center;
   background: #33;
@@ -73,7 +56,6 @@ h4 {
   height: 75px;  
   margin: 0 auto;
 }
-
 #rcorners2 {
   text-align: center;
   background: #33;
@@ -82,35 +64,32 @@ h4 {
   height: 75px; 
   margin: 0 auto; 
 }
-
 #rcorners3 {
   background: #596668;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-
 .active {
   background-image: linear-gradient(to bottom, white, #e470c7, white);
 }
-
 #game {
   width: 750px;
   height: 450px;
   position: relative;
   bottom: -50px;
 }
-
 body {
   background-color: #303238;
 }
-
 /* Add a black background color to the top navigation */
 .topnav {
   position: relative;
   height: 70px;
   background-image: linear-gradient(to bottom, #45b5dd, #70C6E5, #45b5dd);
   overflow: hidden;
+  top: 50%;
+  bottom: 50%;
   border-top: solid black 3px;
   border-bottom: solid black 3px;
 }
@@ -134,7 +113,7 @@ body {
 
 /* Add a color to the active/current link */
 .topnav:active {
-  background-image: linear-gradient(to bottom, white, #e470c7, white);
+  background-image: linear-gradient(to bottom, white, #e470c7, white); 
   color: green;
 }
 
@@ -146,11 +125,12 @@ body {
   height: 70px;
   font-size: 150%;
   background-color: #00000000;
-  top: 60%;
+  top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   border: solid black 3px;
+  padding: 5px 16px;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -167,12 +147,15 @@ body {
 
   .topnav-centered a {
     position: relative;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     transform: none;
   }
 }
 
+* {
+  box-sizing: border-box;
+}
 .item-1 {
   text-decoration-line: none;
 }
@@ -182,11 +165,10 @@ body {
 .item-3 {
   text-decoration-line: none;
 }
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
+.col-4 {width: 33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
 .col-7 {width: 58.33%;}
@@ -199,59 +181,59 @@ body {
 [class*="item-"]:hover {
   background-color: #e48d70;
   color: #ffffff;
-  text-decoration-line: none;
 }
 
-[class*="col-"]: {
-  text-decoration-line: none;
+[class*="col-"] {
+  padding: 5px;
+  float: left;
 }
-
 .header {
-  width: 98.7%;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   padding: 5px 5px;
   border-bottom: solid black 3px;
   border-right: solid black 3px;
   border-left: solid black 3px;
   background-color: #0000ff;
 }
-
 .left {
   text-align: center;
   background-color: #ffffff;
+  width: 100%;
   height: 100%;
-  float: left;
 }
-
 .mid {
   text-align: center;
   background-color: #ffa500;
+  width: 100%;
   height: 100%;
 }
-
 .right {
   text-align: center;
   background-color: #800080;
+  width: 100%;
   height: 100%;
-  float: right;
 }
-
+.main {
+  background-color: #9933cc;
+  height: 100%;
+  float: center;
+  border: solid black 3px;
+  width: 100%;
+  padding: 5px 5px;
+}
 </style>
 </div>
-
 <body>
 <head>
 <!-- Top navigation -->
 <div class="topnav">
-
   <!-- Centered link -->
   <div class="topnav-centered">
     <a href="level-selector.html"><h2>Level Selector</h2></a>
   </div>
-
   <!-- Left-aligned links (default) -->
   <a href="help.html"><h2>Help</h2></a>
-
   <!-- Right-aligned links -->
   <div class="topnav-right">
     <a href="about.html"><h2>About</h2></a>
@@ -263,33 +245,28 @@ body {
   <h1>Level Selector</h1>
 </div>
 
+<div class="main">
 <div class="col-4">
-  <div class="left"">
-    <div class="item-1"> 
-      <a href="Carfentanyl.html"><h4>Carfentanyl</h4></a>
-      <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
-    </div>
+  <div class="left item-1"> 
+    <a href="Carfentanyl.html"><h4>Carfentanyl</h4></a>
+    <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
   </div>
 </div>  
 
 <div class="col-4">
-  <div class="mid">
-    <div class="item-2">
-      <a href="Stress.html"><h4>Stress</h4></a>
-        <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
-    </div>
+  <div class="mid item-2">
+    <a href="Stress.html"><h4>Stress</h4></a>
+      <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
   </div>
 </div>
 
 <div class="col-4">
-  <div class="right">
-    <div class="item-3">
-      <a href="Homelessness.html"><h4>Homelessness</h4></a>
-      <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
-    </div>
+  <div class="right item-3">
+    <a href="Homelessness.html"><h4>Homelessness</h4></a>
+    <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
   </div>
 </div>
 
+</div>
 </body>
-
 </html>
