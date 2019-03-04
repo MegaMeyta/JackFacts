@@ -14,9 +14,9 @@ function restartMusic(){
 function preload() {
   console.log("running preload")
   // load all the game assest in before we create the stage 
-  game.load.image('ground','images/dirt.png');
-  game.load.image('ground2', 'images/dirt2.png')
-  game.load.image('ground4' , 'images/brick4.jpg')
+  game.load.image('ground','images/100x100.png');
+  game.load.image('ground2', 'images/200x100.png')
+  game.load.image('ground4' , 'images/400x100.jpg')
   game.load.image('Square', 'images/Circle.jpg');
   game.load.image('City', 'images/stone.jpg');
   game.load.image('door', 'images/door.jpg');
