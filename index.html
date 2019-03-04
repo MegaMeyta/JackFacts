@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!DOCUTYPE html>
 <html>
-
 <body>
 <style>
 body{
@@ -10,6 +9,7 @@ body{
 p {
   color: black;
   font-family: courier;
+  font-size: 100%;
 }
 </style>
 </body>
@@ -22,9 +22,9 @@ body {
 }
 
 h1 {
-  color: #ffffff;
+  color: #00007f;
   font-family: verdana;
-  font-size: 200%;
+  font-size: 300%;
 }
 h2  {
   color: #5e6cb6;
@@ -36,23 +36,31 @@ h3 {
 	font-family: courier;
 	font-size: 150%;
 }
+
+h4 {
+	color: #abd92f;
+	font-family: courier;
+	font-size: 30px;
+}
 </style>
 </head>
 
 <div>
 <style>
+#page {
+  padding: 5px 5px;
+}
+
 *{
   margin: 0 auto;
   padding: 0;
 }
 
 #rcorners1 {
-  text-align: center;
-  background: #33;
-  padding: 0; 
-  width: 20%;
-  height: 75px;  
-  margin: 0 auto;
+  background: #596668;
+  padding: 0;
+  width: 95%;
+  height: 100%;
 }
 
 #rcorners2 {
@@ -83,7 +91,8 @@ h3 {
 }
 
 body {
-  background-color: #303238;
+  background-color: #ffffff;
+  border: solid black 3px;
 }
 
 /* Add a black background color to the top navigation */
@@ -92,7 +101,8 @@ body {
   height: 70px;
   background-image: linear-gradient(to bottom, #45b5dd, #70C6E5, #45b5dd);
   overflow: hidden;
-  border: solid black 3px;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
 }
 
 /* Style the links inside the navigation bar */
@@ -153,37 +163,83 @@ body {
   }
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: menupic; }
-.item4 { grid-area: main; }
-.item5 { grid-area: mainpic; }
-.item6 { grid-area: right; }
-.item7 { grid-area: rightpic; }
-
-.grid-container {
-  display: grid;
-  grid: 
-  'header header header header header header'
-  'menu menu main main right right'
-  'menupic menupic mainpic mainpic rightpic rightpic';
-  grid-gap: 10px;
-  background-color: #e5708c;
-  padding: 10px;
-  margin: 0 auto;
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
 }
 
-.grid-container > div {
-  background-color: #d9b22f;
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #b65e6c;
+  position: relative;
+  width: 99.5%;
+  height: 40px;
+  border: solid black 3px;
+}
+
+.header a {
+  background: #b65e6c;
+  height: 40px;
+  width: 49.75%;
+  float: left;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  width: 100%;
+}
+
+.header a:hover {
+  color: green;
+  width: 49.75%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.header-right a {
+  background: #b65e6c;
+  width: 49.75%;
+  float: right;
+  text-align: center;
+  border-left: solid black 3px;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: #ffffff;
+  font-family: verdana;
+}
+
+.aside-1 {
+  background: #5e6cb6;
+  height: 100%;
+}
+
+.aside-2 {
+  background: #5e6cb6;
+  height: 100%;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
 }
 </style>
 </div>
 
-<body>
 <head>
 <!-- Top navigation -->
 <div class="topnav">
@@ -203,26 +259,24 @@ body {
 </div>
 </head>
 
-<div class="grid-container">
-  <div class="item1">Level Selector</div>
-  <div class="item2"><a href="Carfentanyl.html">Carfentanyl</a></div>
-  <div class="item3">
-    <picture>
-      <img src="/images/FUCKIN_BRAN.jpg" style="width:50%" style="height:50%">
-    </picture>
+<body>
+<div id="rcorners1">
+<div id="page">
+  <div class="header">
+    <a href="login.html"><h4>Login</h4></a>
+    <header class="header-right">
+      <a href="sign-up.html"><h4>Sign Up</h4></a>
+    </header>
   </div>
-  <div class="item4"><a href="Stress.html">Stress</a></div>
-  <div class="item5">
-    <picture>
-      <img src="/images/FUCKIN_BRAN.jpg" style="width:50%" style="height:50%">
-    </picture>
+  <div class="wrapper">
+    <article class="main">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
+    </article>
+  <aside class="aside aside-1">Aside 1</aside>
+  <aside class="aside aside-2">Aside 2</aside>
+  <footer class="footer">Footer</footer>
   </div>
-  <div class="item6"><a href="Homelessness.html">Homelessness</a></div>
-  <div class="item7">
-    <picture>
-      <img src="/images/FUCKIN_BRAN.jpg" style="width:50%" style="height:50%">
-    </picture>
-  </div>
+</div>
 </div>
 </body>
 
