@@ -19,7 +19,7 @@ function preload() {
   game.load.image('ground4' , 'images/400x100.jpg')
   game.load.image('Square', 'images/Circle.jpg');
   game.load.image('City', 'images/stone.jpg');
-  game.load.image('door', 'images/door.jpg');
+  game.load.image('door', 'images/Door4Josh.jpg');
   game.load.spritesheet('player', 'images/avatar still 2.png',20,50);
   game.load.spritesheet('cowboy', 'images/cowboyWalk.png', 30, 38);
   game.load.spritesheet('trigger', 'images/jf2small.png', 50, 50, 1);
