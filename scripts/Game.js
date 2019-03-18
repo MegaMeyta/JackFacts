@@ -134,14 +134,14 @@ function update() {
   //  
   player.body.velocity.x = 0;
 
-  if (cursors.left.isDown) {
+   if (cursors.left.isDown || stick.direction === Phaser.LEFT) {
     player.animations.play('left');
     //  Move to the left
     player.body.velocity.x = (-200 * speedMod);
     //player.animations.play('left')
 
   }
-  else if (cursors.right.isDown) {
+  else if (cursors.right.isDown || stick.direction === Phaser.RIGHT) {
     player.animations.play('right');
 
 
@@ -156,9 +156,8 @@ function update() {
   }
 
   //  Allow the player to jump if they are touching the ground.
-  if ((cursors.up.isDown) && player.body.touching.down && hitPlatform) {
+  if ((cursors.up.isDown || stick.direction === Phaser.UP) && player.body.touching.down && hitPlatform) {
     player.body.velocity.y = -485;
-    //pause the animation
     player.animations.stop();
     if (cursors.left.isDown) {
       player.frame = 18;
