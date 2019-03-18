@@ -29,6 +29,7 @@ function preload() {
   game.load.audio('music', music);
 
   game.load.bitmapFont('gem', 'gem.png', 'images/gem.xml');
+  game.load.atlas('dpad', 'images/dpad.png', 'images/dpad.json');
 }
 
 //  global variables for game world (this is what changes between levels ) (x,y,type) (type not implimented yet )
@@ -113,6 +114,9 @@ console.log("running create")
 
   music.play()
   game.time.events.loop(133000, restartMusic, this)
+  pad = game.plugins.add(Phaser.VirtualJoystick);
+  stick = pad.addDPad(0,0,200, 'dpad');
+  stick.alignBottomLeft(0);
 }
 
 
