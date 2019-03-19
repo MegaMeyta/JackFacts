@@ -59,7 +59,7 @@ var wallJumpCounter = 0;
 var music;
 var loopCount = 0;
 var buttonGroup
-var speedMod = 0
+var speedMod = 1
 
 function create() {
 console.log("running create")
