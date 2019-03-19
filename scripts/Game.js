@@ -117,7 +117,29 @@ console.log("running create")
   pad = game.plugins.add(Phaser.VirtualJoystick);
   stick = pad.addDPad(0,0,200, 'dpad');
   stick.alignBottomLeft(0);
+  buttonJump = pad.addButton(700, 300, 'dpad', 'button1-up', 'button1-down');
+  buttonSprint = pad.addButton(700, 400, 'dpad', 'button2-up', 'button2-down');
+  buttonSelect = pad.addButton(600, 400, 'dpad', 'button3-up', 'button3-down');
+  buttonJump.onDown.add(jump)
+  buttonSprint.onDown.add(sprint)
 }
+function jump(){
+  if(player.body.touching.down && hitPlatform){
+    player.body.velocity.y = -485;
+    //pause the animation
+    player.animations.stop();
+  }
+}
+function sprint(){
+  pressCounter += 1
+  if(pressCounter%2 === 0){
+    speedMod = 2
+  }
+  else{
+    speedMod = 1
+  }
+}
+
 
 
 function update() {
