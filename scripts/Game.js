@@ -123,7 +123,7 @@ console.log("running create")
   buttonSelect = pad.addButton(600, 400, 'dpad', 'button3-up', 'button3-down');
   buttonJump.onDown.add(jump)
   buttonSprint.onDown.add(sprint)
-  buttonJump.onDown.add(spaceReplace)
+  buttonSelect.onDown.add(spaceReplace)
 }
 function jump(){
   if(player.body.touching.down && hitPlatform){
