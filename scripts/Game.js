@@ -70,7 +70,7 @@ console.log("running create")
   //  set the type of physics 
   game.physics.startSystem(Phaser.Physics.ARCADE);
   game.stage.backgroundColor = '#000000';
-  background = game.add.tileSprite(0, 400, 800, 600, 'City');
+  background = game.add.tileSprite(0, -100, 800, 600, 'City');
   music = game.sound.add('music');
   // set the gravity of the stage 
   //game.physics.arcade.gravity.y = 250;
