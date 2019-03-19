@@ -18,7 +18,7 @@ function preload() {
   game.load.image('ground2', 'images/200x100.png')
   game.load.image('ground4' , 'images/400x100.png')
   game.load.image('Square', 'images/Circle.jpg');
-  game.load.image('City', 'images/stone.jpg');
+  game.load.image('City', 'images/Game Background.png');
   game.load.image('door', 'images/Door4Josh.jpg');
   game.load.spritesheet('player', 'images/avatar still 2.png',20,50);
   game.load.spritesheet('cowboy', 'images/cowboyWalk.png', 30, 38);
@@ -70,7 +70,7 @@ console.log("running create")
   //  set the type of physics 
   game.physics.startSystem(Phaser.Physics.ARCADE);
   game.stage.backgroundColor = '#000000';
-  background = game.add.tileSprite(0, 0, 800, 600, 'City');
+  background = game.add.tileSprite(0, 0, 4000, 4000, 'City');
   music = game.sound.add('music');
   // set the gravity of the stage 
   //game.physics.arcade.gravity.y = 250;
