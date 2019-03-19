@@ -59,7 +59,7 @@ var wallJumpCounter = 0;
 var music;
 var loopCount = 0;
 var buttonGroup
-
+var speedMod = 0
 
 function create() {
 console.log("running create")
@@ -145,7 +145,6 @@ function sprint(){
 function update() {
   console.log("running update")
   
-  var speedMod = 1;
   //  Reset the players velocity (movement)
   //  Collide the player and the stars with the platforms
   hitPlatform = game.physics.arcade.collide(player, platforms);
