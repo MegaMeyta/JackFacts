@@ -123,6 +123,7 @@ console.log("running create")
   buttonSelect = pad.addButton(600, 400, 'dpad', 'button3-up', 'button3-down');
   buttonJump.onDown.add(jump)
   buttonSprint.onDown.add(sprint)
+  buttonJump.onDown.add(spaceReplace)
 }
 function jump(){
   if(player.body.touching.down && hitPlatform){
@@ -140,7 +141,13 @@ function sprint(){
     speedMod = 1
   }
 }
-
+function spaceReplace(){
+  triggers.checkTrigger(player);
+  //now check to see if the next dialoug button is pressed
+  if (!messageBeingWritten && messageBoxVisible) {
+    messageBoxNext()
+  }
+}
 
 
 function update() {
@@ -151,7 +158,7 @@ function update() {
   hitPlatform = game.physics.arcade.collide(player, platforms);
   //console.log(hitPlatform);
   if (shiftkey.isDown) {
-    speedMod = 2;
+    sprint();
   }
   //  
   player.body.velocity.x = 0;
