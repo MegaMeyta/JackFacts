@@ -60,6 +60,7 @@ var music;
 var loopCount = 0;
 var buttonGroup
 var speedMod = 1
+var pressCounter = 0
 
 function create() {
 console.log("running create")
