@@ -50,8 +50,8 @@ function initTriggers(triggerList){
   triggerList.addTrigger(240,-840,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "Addiction is seen as such a negative word but thats beside the point. No matter the subject addiction can never be killed and results in the largest ripple effect you've ever seen. JACK FACTS (Hint Edition)!";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
