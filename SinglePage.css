@@ -1,0 +1,340 @@
+* {
+	font-family: 'open sans', 'lato', 'helvetica', sans-seriff;
+}
+
+html, body, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  color: #fff;
+  overflow: hidden; 
+}
+
+.page {
+	position: absolute;
+}
+
+body {
+	background-color: #303238;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 200%;
+	color: #ff0000;
+}
+
+h2 {
+	font-size: 166%;
+	color: #ffffff;
+}
+
+h3 {
+	font-size: 133%;
+  padding: 0;
+}
+
+.title {
+	font-size: 38px;
+	display: block;
+}
+
+.p {
+	font-size: 13px;
+	display: block;
+}
+
+.topnav {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: solid black 2px;
+	position: absolute;
+}
+
+/* Left TOPNAV button */
+.button-1 {
+	float: left;
+	position: absolute;
+}
+
+/* Middle TOPNAV button */
+.button-2 {
+	float: none;
+	position: absolute;
+	border-right: solid black 2px;
+	border-left: solid black 2px;
+}
+
+/* Right TOPNAV button */
+.button-3 {
+	float: right;
+	position: absolute;
+}
+
+/* TOPNAV design for ALL pages */
+.button-1, .button-2, .button-3 {
+	color: #0400ff;
+}
+
+.button-5 {
+	float: left;
+	border-bottom: solid black 2px;
+}
+
+.button-6 {
+	float: left;
+	border-bottom: solid black 2px;
+	border-top: solid black 2px;
+}
+
+/* Menu for HELP page */
+.button-4, .button-5, .button-6, .button-7 {
+	color: #0400ff;
+}
+
+/* Container for menu buttons on HELP page */
+.menu {
+	float: left;
+	text-align: center;
+	border: solid black 2px;
+	margin: 0;
+	padding: 0;
+}
+
+[class="button-"] {
+	font-family: sans-seriff;
+	text-decoration: none;
+}
+
+[class="button-"]:hover {
+	background-color: #ff009d;
+	color: #ffffff;
+}
+
+/* Different pages */
+/* HOME */
+#page1 {background-color: #0026ff;}
+
+/* HELP */
+#page2 {background-color: #00ffc8;}
+
+/* ABOUT */
+#page3 {background-color: #ff0000;}
+
+/* LEVEL-SELECTOR */
+#page4 {background-color: #d0ff00;}
+
+#page1 {
+  left: 0;
+}
+
+/*This keeps the pages at the side, I think, like pushed away - Sara **thank you** */
+#page2, #page3, #page4 {
+	left: 200%;
+}
+
+/* List of relevant charities on HELP page */
+ul2 {
+	list-style-type: none;
+	float: left;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: solid black 2px;
+}
+
+li2 {
+	float: left;
+	text-align: center;
+	border-bottom: solid black 2px;
+}
+
+li2 a {
+	text-decoration: none;
+	display: block;
+	color: #000;
+	background-color: #ffffff;
+	padding: 5px 18px;
+}
+
+li2:last-child {
+	border-bottom: none;
+}
+
+li2 a:hover {
+	color: #ffffff;
+	background-color: #ffffff;
+}
+
+/* Animations for selecing a new page */
+#tlevel-selector:target #page2, #tabout:target #page3, #thelp:target #page4 {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  transition-delay: 0.5s;
+}
+
+#tlevel-selector:target #page1 .icon, #tabout:target #page1 .icon, #thelp:target #page1 .icon {
+  -webkit-filter: blur(3px);
+}
+
+/* Background for pages after click */
+#thelp:target #page1, #tabout:target #page1, #tlevel-selector:target #page1 {
+	background-color: #000000;
+}
+
+#tlevel-selector:target .page#page2 .icon, #tabout:target .page#page3 .icon, #thelp:target .page#page4 .icon { 
+	transform: translateX(0) !important;
+	-webkit-transform: translateX(0) !important;
+	-moz-transform: translateX(0) !important;
+	transition-delay: 1s;
+}
+
+/* icon on page */
+.page .icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 20%;
+	height: 20%;
+	margin: auto;
+	text-align: center;
+	font-size: 80px;
+	line-height: 1.3;
+	transform: translateX(360%);
+	-webkit-transform: translateX(360%);
+	-moz-transform: translateX(360%);
+	transform: all 0.5s cubic-berzer(0,1.1,1,1);
+	-webkit-transform: all 0.5s cubic-berzer(0,1.1,1,1);
+	-moz-transform: all 0.5s cubic-berzer(0,1.1,1,1);
+}
+
+.page#page1 .icon {
+	height: 220px;
+	transform: translateX(10%) !important;
+}
+
+/* Icon/Page Title size and effect in the SIDEBAR */
+#thelp, #tabout, #tlevel-selector {
+	transition: blur(5px);
+}
+
+/* Customize the sidebar */
+.icon {
+	color: #ffffff;
+  font-size: 500%;
+	display: block;
+}
+
+#menu .icon:hover {
+	filter: dropshadow(0px 0px 10px rgba(0,0,0.5));
+}
+
+ul {
+	position: fixed;
+	height: 100%;
+  width: 10%;
+	padding: 0;
+	text-align: center;
+	margin: auto;
+	z-index: 1;
+}
+
+/* SIDEBAR customization */
+#menu .icon {
+	margin: 30px 0;
+	transition: all 0.5s ease-out !important;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+}
+
+/* Unactive sidebar icon size // **DOES NOT WORK ON HOME PAGE** */
+#thelp:target ul .icon, #tabout:target ul .icon, #tlevel-selector:target ul .icon {
+	transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transition-delay: 0.25s;
+}
+
+/* Sidebar ACTIVE icon size */
+ #tlevel-selector:target #page2active, #tabout:target #page3active, #thelp:target #page4active {
+	transform: scale(1.2) !important;
+	-webkit-transform: scale(1.2) !important;
+	-moz-transform: scale(1.2) !important;
+}
+	
+.page, .title {
+	line-height: 2;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: black;
+}
+
+.item2 {grid-area: one;}
+.item3 {grid-area: two;}
+.item4 {grid-area:three;}
+.item5 {grid-area: four;}
+.item6 {grid-area: five;}
+.item7 {grid-area: six;}
+.spacing1 {
+  grid-area: spacing1;
+  background-color: black;
+}
+.spacing2 {
+  grid-area: spacing2;
+  background-color: transparent;
+}
+
+.item2, .item3, .item4, .item5, .item6, .item7 {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header spacing1' 'one two three spacing2' 'one two three spacing2' 'four five six spacing2' 'four five six spacing2';
+  align-content: start;
+  padding: 0;
+}
+
+.grid-container > span {
+  text-align: center;
+  font-size: 100%;
+  padding: 10px 0;
+}
+
+a:link, a:visited, a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 201, 100);
+}
+
+#game {
+  width: 750px;
+  height: 450px;
+  position: relative;
+  bottom: -50px;
+}
+
+@media screen and (max-width [650px]) {
+  #game {
+	  width: 100%;
+	  height: 100%;
+  }
+}
+
+/* ADD LOBBY MUSIC TO WEBSITE */
