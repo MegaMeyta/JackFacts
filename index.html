@@ -1,283 +1,65 @@
-<!DOCUTYPE html>
+<!DOCTYPE html>
 <html>
-<body>
-<style>
-body{
-  text-align: center;
-}
-
-p {
-  color: black;
-  font-family: courier;
-  font-size: 100%;
-}
-</style>
-</body>
-
-<head>
-<style>
-body {
-  background-color: #303238;
-  text-align: center;
-}
-
-h1 {
-  color: #00007f;
-  font-family: verdana;
-  font-size: 300%;
-}
-h2  {
-  color: #5e6cb6;
-  font-family: courier;
-  font-size: 200%;
-}
-h3 {
-	color: #d80000;
-	font-family: courier;
-	font-size: 150%;
-}
-
-h4 {
-	color: #abd92f;
-	font-family: courier;
-	font-size: 30px;
-}
-</style>
-</head>
-
-<div>
-<style>
-#page {
-  padding: 5px 5px;
-}
-
-*{
-  margin: 0 auto;
-  padding: 0;
-}
-
-#rcorners1 {
-  background: #596668;
-  padding: 0;
-  width: 95%;
-  height: 100%;
-}
-
-#rcorners2 {
-  text-align: center;
-  background: #33;
-  padding: 0; 
-  width: 60%;
-  height: 75px; 
-  margin: 0 auto; 
-}
-
-#rcorners3 {
-  background: #596668;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.active {
-  background-image: linear-gradient(to bottom, white, #e470c7, white);
-}
-
-#game {
-  width: 750px;
-  height: 450px;
-  position: relative;
-  bottom: -50px;
-}
-
-body {
-  background-color: #ffffff;
-  border: solid black 3px;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  height: 70px;
-  background-image: linear-gradient(to bottom, #45b5dd, #70C6E5, #45b5dd);
-  overflow: hidden;
-  border-top: solid black 3px;
-  border-bottom: solid black 3px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-  color: #e48d70;
-  width: 100px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #e48d70;
-  color: #70c6e5;
-  height: 70px;
-}
-
-/* Add a color to the active/current link */
-.topnav:active {
-  background-image: linear-gradient(to bottom, white, #e470c7, white); 
-  color: green;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  width: 76.5%;
-  height: 70px;
-  font-size: 150%;
-  background-color: #00000000;
-  top: 60%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  border: solid black 3px;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-.wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.header {
-  background: #b65e6c;
-  position: relative;
-  width: 99.5%;
-  height: 40px;
-  border: solid black 3px;
-}
-
-.header a {
-  background: #b65e6c;
-  height: 40px;
-  width: 49.75%;
-  float: left;
-  text-align: center;
-}
-
-.header a:hover {
-  color: green;
-  width: 49.75%;
-  height: 40px;
-  overflow: hidden;
-}
-
-.header-right a {
-  background: #b65e6c;
-  width: 49.75%;
-  float: right;
-  text-align: center;
-  border-left: solid black 3px;
-}
-
-.footer {
-  background: lightgreen;
-}
-
-.main {
-  text-align: left;
-  background: #ffffff;
-  font-family: verdana;
-}
-
-.aside-1 {
-  background: #5e6cb6;
-  height: 100%;
-}
-
-.aside-2 {
-  background: #5e6cb6;
-  height: 100%;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
-}
-
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
-}
-</style>
-</div>
-
-<head>
-<!-- Top navigation -->
-<div class="topnav">
-
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <a href="level-selector.html"><h2>Level Selector</h2></a>
+  <head>
+  <link rel="stylesheet" type="text/css" href="SinglePage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="ct" id="thome">
+    <div class="ct" id="tlevel-selector">
+      <div class="ct" id="tabout">
+        <div class="ct" id="thelp">
+          <ul id="menu">
+            <a href="#index"><li class="icon fas fa-home" id="page1active"></li></a>
+            <a href="#tlevel-selector"><li class="icon fas fa-server" id="page2active"></li></a>
+            <a href="#tabout"><li class="icon fas fa-info-circle" id="page3active"></li></a>
+            <a href="#thelp"><li class="icon fas fa-question-circle" id="page4active"></li></a>
+          </ul>
+          <div class="page" id="page1">
+            <section class="icon fas fa-home">
+            <span class="title">Home</span>
+            <span class="p">This is the home page.</span>
+            </section>
+          </div>
+          <div class="page" id="page2">
+            <span class="grid-container">
+              <span class="item1">
+                <i icon="fas fa-user-alt"></i>
+                <h2>Level Selector</h2>
+                <i icon="fas fa-user"></i>
+              </span>
+              <span class="item2">
+              <a href="Carfentanyl.html">
+                <h3>This is level one</h3></a>
+                <img src="/images/FUCKIN_BRAN" style="width:300px;height:160px">
+              </span>
+              <span class="item3">
+              <a href="Stress.html">
+                <h3>This is level 2</h3></a>
+                <img src="/images/FUCKIN_BRAN.png" style="width:300px;height:160px">
+              </span>
+              <span class="item4">
+              <a href="Homelessness.html">
+                <h3>This is level 3<h3></a>
+                <img src="/images/FUCKIN_BRAN.html" style="width:300px;height:160px">
+              </span>
+            </span>
+          </div>
+          <div class="page" id="page3">
+            <section class="icon fas fa-info-cirlce">
+            <span class="title">About</span>
+            <span class="p">This is the about page</span>
+            </section>
+          </div>
+          <div class="page" id="page4">
+            <section class="icon fas fa-question-circle">
+            <span class="title">Help</span>
+            <span class="p">This is the help page</span>
+            </section>
+          </div>
+        </div>
+      </div> 
+    </div>
   </div>
-
-  <!-- Left-aligned links (default) -->
-  <a href="help.html"><h2>Help</h2></a>
-
-  <!-- Right-aligned links -->
-  <div class="topnav-right">
-    <a href="about.html"><h2>About</h2></a>
-  </div>
-</div>
-</head>
-
-<body>
-<div id="rcorners1">
-<div id="page">
-  <div class="header">
-    <a href="login.html"><h4>Login</h4></a>
-    <header class="header-right">
-      <a href="sign-up.html"><h4>Sign Up</h4></a>
-    </header>
-  </div>
-  <div class="wrapper">
-    <article class="main">
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
-    </article>
-  <aside class="aside aside-1">Aside 1</aside>
-  <aside class="aside aside-2">Aside 2</aside>
-  <footer class="footer">Footer</footer>
-  </div>
-</div>
-</div>
-</body>
-
+  </body>
 </html>
