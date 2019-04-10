@@ -1,196 +1,48 @@
 <!DOCTYPE html>
 <html>
+<style>
+ul {
+	position: fixed;
+	height: 100%;
+	padding: 0;
+	text-align: center;
+	margin: auto;
+	z-index: 1;
+}
 
+/* SIDEBAR customization */
+#menu .icon {
+	margin: 100px 0;
+	transition: all 0.5s ease-out !important;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+}
+
+/* Customize the sidebar */
+.icon {
+	color: #ffffff;
+	font-size: 64px;
+	display: block;
+}
+</style>
 <body>
-<style>
-body{
-  text-align: center;
-}
-
-p {
-  color: black;
-  font-family: courier;
-  font-size: 100%;
-}
-</style>
-</body>
-
-<head>
-<style>
-body {
-  background-color: #303238;
-  text-align: center;
-}
-
-h1 {
-  color: #00007f;
-  font-family: verdana;
-  font-size: 300%;
-}
-h2  {
-  color: #fd9400;
-  font-family: courier;
-  font-size: 200%;
-}
-h3 {
-	color: #d80000;
-	font-family: courier;
-	font-size: 150%;
-}
-</style>
-</head>
-
-<div>
-<style>
-*{
-  margin: 0 auto;
-  padding: 0;
-}
-
-#rcorners1 {
-  text-align: center;
-  background: #33;
-  padding: 0; 
-  width: 208.5px;
-  height: 75px;  
-  margin: 0 auto;
-}
-
-#rcorners2 {
-  text-align: center;
-  background: #33;
-  padding: 0; 
-  width: 710px;
-  height: 75px; 
-  margin: 0 auto; 
-}
-
-#game {
-  width: 750px;
-  height: 450px;
-  position: relative;
-  bottom: -50px;
-}
-
-body {
-  background-color: #303238;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  bottom: -25px;
-  height: 70px;
-  background-image: linear-gradient(to bottom, white, #70C6E5, white);
-  overflow: hidden;
-  border: solid black 3px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-  color: #e48d70;
-  width: 100px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: transparent;
-  color: #70c6e5;
-}
-
-/* Add a color to the active/current link */
-.topnav:active {
-  background-image: linear-gradient(to bottom, white, #e470c7, white); 
-  color: green;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  width: 75%;
-  height: 70 px;
-  background-color: #00000000;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  font-size: 150%;
-  border: solid black 3px;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-#game {
-  width: 750px;
-  height: 450px;
-  position: relative;
-  bottom: -50px;
-}
-
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-</style>
-</div>
-
-<!-- Top navigation -->
-<div class="topnav">
-
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <a href="level-selector.html"><h2>Give Up</h2></a>
-  </div>
-
-  <!-- Left-aligned links (default) -->
-  <a href="help.html"><h2>Help</h2></a>
-
-  <!-- Right-aligned links -->
-  <div class="topnav-right">
-    <a href="about.html"><h2>About</h2></a>
-  </div>
-</div>
-
-<body>
+	<ul id="menu">
+    	<a href="#index"><li class="icon fas fa-home" id="page1active"></li></a>
+    </ul>
   <div id="game">
-	  <div id="game-stage"></div>
+	<div id="game-stage"></div>
   	<script src="phaser.js">
-
-	  </script>
-	  <script src="scripts/messageBox.js">
-
-	  </script>
-   	 <script src="scripts/Carfentanyl.js">
-
-	  </script>
-	  <script src="scripts/triggers.js">
-		  
-	  </script>
-	  <script src="phaser-virtual-joystick.min.js">
-
-	  </script>
-	  <script src="scripts/Game.js">
-
-	  </script>
+	</script>
+	<script src="scripts/messageBox.js">
+	</script>
+   	<script src="scripts/Carfentanyl.js">
+	</script>
+	<script src="scripts/triggers.js">	  
+	</script>
+	<script src="phaser-virtual-joystick.min.js">
+	</script>
+	<script src="scripts/Game.js">
+	</script>
   </div>
 </body>
-
 </html>
