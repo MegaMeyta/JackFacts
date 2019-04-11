@@ -71,6 +71,7 @@ console.log("running create")
   //  set the type of physics 
   game.physics.startSystem(Phaser.Physics.ARCADE);
   game.stage.backgroundColor = '#000000';
+  game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
   background = game.add.tileSprite(0, -3000, 4000, 4000, 'City');
   music = game.sound.add('music');
   // set the gravity of the stage 
