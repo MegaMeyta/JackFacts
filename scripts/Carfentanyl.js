@@ -78,21 +78,6 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
-  triggerList.addTrigger(1340,60,function(){
-    //  put the code you want to execute when the trigger is triggered here
-    //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
-    addMessageToQueue(message0, null);  //  just add null for now dont ask why 
-    addMessageToQueue(message1, null);
-
-    //  maybe after you want to do something like end the level, or change
-    //  someone score for something and save it, get a collectable since
-    //  it dosent have to be a message 
-    
-    console.log("test event triggered");
-  },true);
-
   triggerList.addTrigger(1540,-1740,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
