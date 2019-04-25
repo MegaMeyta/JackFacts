@@ -16,6 +16,8 @@ function initTriggers(triggerList){
     Here is where we will create our triggers for the level,
     the tempalte is shown below copy it to make more 
   */
+  
+  //Introduction Trigger//
   triggerList.addTrigger(240,60,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
@@ -31,11 +33,12 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);  //  true at the end for debug, make it flase or leave it to hide the trigger sprite
 
+  //FACT #1//
   triggerList.addTrigger(40,-240,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "Did you know? People are naturally inclined to care more about the victim of fentanyl than the dealer that gave it to him in the first place. It's just science.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -46,7 +49,7 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
-
+  //FACT #2//
   triggerList.addTrigger(240,-840,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
@@ -62,12 +65,12 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
-
+  //FACT #3//
   triggerList.addTrigger(340,-1040,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "One of the most common assuptions out there is that overdose automatically means death. I don't think hospitals do their job that badly.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -78,11 +81,12 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
+  //FACT #4//
   triggerList.addTrigger(1540,-1740,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "In Calgary, Fentanyl has a nickname among the opiods. They Call it the Grim Reaper.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -93,12 +97,12 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
-
+  //FACT #5//
   triggerList.addTrigger(1140,-1940,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "My buddy tried fentanyl and he said he had to go to edmonton because the Calgary hospitals were full. He's fine now BTW.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -109,12 +113,12 @@ function initTriggers(triggerList){
     console.log("test event triggered");
   },true);
 
-
+  //FACT #6//
   triggerList.addTrigger(1940,-340,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "Silent killers often come in the smallest sizes. Just like the ebola virus which causes someone to die in only two weeks. Danger must be it's middle name.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -129,8 +133,8 @@ function initTriggers(triggerList){
   triggerList.addTrigger(2240,-1940,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you. ";
+    var message1 = "As the leader o89f your comunity you must tackle the problem that Carfentanyl poses in Calgary";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
