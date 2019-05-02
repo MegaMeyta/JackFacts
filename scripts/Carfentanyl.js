@@ -134,7 +134,7 @@ function initTriggers(triggerList){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
     var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you. ";
-    var message1 = "As the leader o89f your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message1 = "Things that share the same part of their name (Grand Piano and Upright Piano, Indoor Soccer and Outdoor Soccer) tend to be very simmilar and harder to descern from eachother.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -149,8 +149,8 @@ function initTriggers(triggerList){
   triggerList.addTrigger(2840,60,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "Calgary, unlike other cities in Alberta, is very deceiving as it is not as clean as it seems.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
@@ -165,8 +165,8 @@ function initTriggers(triggerList){
   triggerList.addTrigger(3040,-1040,function(){
     //  put the code you want to execute when the trigger is triggered here
     //  here is an example of how to add tigger the message box 
-    var message0 = "Welcome to the world of JackFacts: Carfentanyl Edition. ";
-    var message1 = "As the leader of your comunity you must tackle the problem that Carfentanyl poses in Calgary";
+    var message0 = "You have found one of my Jack Facts. For an award I shall give you one hint to help you.";
+    var message1 = "Ha Just Kidding. Don't just trust some stranger who starts to randomly telling you facts and expect them to help you solve all your problems.";
     addMessageToQueue(message0, null);  //  just add null for now dont ask why 
     addMessageToQueue(message1, null);
 
