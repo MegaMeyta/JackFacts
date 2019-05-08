@@ -4,7 +4,7 @@ console.log("running Carfentanyl.js")
 */
 var playerPosition = [0,400];       //  coords of player spawn 
 var decorationPositions = [];   
-var music = 'Music/Bad Boy.mp3'  
+var music = 'Music/you reposted in the wrong neighborhood (instrumental version).mp3'  
 //cord for buttons (x,y,type,function) 
 var buttonPosition = [[1600, -1300, 'door', function(){window.location.href = "http://www.jackfacts.club/#tlevel-selector"}] ,[100, -1900, 'door', function(){window.location.href = "http://www.jackfacts.club/#tlevel-selector"}] ,[3200, -100, 'door', function(){window.location.href = "http://www.jackfacts.club/#tlevel-selector"}],[2000, -100, 'door', function(){window.location.href = "http://www.jackfacts.club/#tlevel-selector"}]]
    // cords for decorations (x,y,type)[0,100,'ground'],[0,100,'ground']
