@@ -155,7 +155,6 @@ function spaceReplace(){
 
 function update() {
   console.log("running update")
-  }
   //  Reset the players velocity (movement)
   //  Collide the player and the stars with the platforms
   hitPlatform = game.physics.arcade.collide(player, platforms);
