@@ -275,13 +275,13 @@ function update() {
       framesInState++;
     }
 
-  } else {
+  } 
+  else {
     if (nextMessageIndicator != null) {
       nextMessageIndicator.destroy();
       nextMessageIndicator = null;
     }
   }
-  
 }
 
 
