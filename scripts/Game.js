@@ -156,6 +156,9 @@ function update() {
   console.log("running update")
   if(game.device.desktop){
     stick.visible = false
+    buttonJump.visible = false 
+    buttonSprint.visible = false 
+    buttonSelect.visible = false
   }
   //  Reset the players velocity (movement)
   //  Collide the player and the stars with the platforms
