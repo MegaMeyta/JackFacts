@@ -117,17 +117,15 @@ console.log("running create")
 
   music.play()
   game.time.events.loop(133000, restartMusic, this)
-  if (game.device.android){
-    pad = game.plugins.add(Phaser.VirtualJoystick);
-    stick = pad.addDPad(0,0,200, 'dpad');
-    stick.alignBottomLeft(0);
-    buttonJump = pad.addButton(700, 300, 'dpad', 'button1-up', 'button1-down');
-    buttonSprint = pad.addButton(700, 400, 'dpad', 'button2-up', 'button2-down');
-    buttonSelect = pad.addButton(600, 400, 'dpad', 'button3-up', 'button3-down');
-    buttonJump.onDown.add(jump)
-    buttonSprint.onDown.add(sprint)
-    buttonSelect.onDown.add(spaceReplace)
-  }
+  pad = game.plugins.add(Phaser.VirtualJoystick);
+  stick = pad.addDPad(0,0,200, 'dpad');
+  stick.alignBottomLeft(0);
+  buttonJump = pad.addButton(700, 300, 'dpad', 'button1-up', 'button1-down');
+  buttonSprint = pad.addButton(700, 400, 'dpad', 'button2-up', 'button2-down');
+  buttonSelect = pad.addButton(600, 400, 'dpad', 'button3-up', 'button3-down');
+  buttonJump.onDown.add(jump)
+  buttonSprint.onDown.add(sprint)
+  buttonSelect.onDown.add(spaceReplace)
 }
 function jump(){
   if(player.body.touching.down && hitPlatform){
@@ -156,6 +154,8 @@ function spaceReplace(){
 
 function update() {
   console.log("running update")
+  if(game.device.desktop){
+    dpad.visible = false
   //  Reset the players velocity (movement)
   //  Collide the player and the stars with the platforms
   hitPlatform = game.physics.arcade.collide(player, platforms);
