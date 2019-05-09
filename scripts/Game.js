@@ -61,6 +61,7 @@ var loopCount = 0;
 var buttonGroup
 var speedMod = 1
 var pressCounter = 0
+var stick;
 
 function create() {
 console.log("running create")
