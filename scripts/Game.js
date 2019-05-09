@@ -156,6 +156,7 @@ function update() {
   console.log("running update")
   if(game.device.desktop){
     dpad.visible = false
+  }
   //  Reset the players velocity (movement)
   //  Collide the player and the stars with the platforms
   hitPlatform = game.physics.arcade.collide(player, platforms);
