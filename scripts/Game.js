@@ -116,7 +116,7 @@ console.log("running create")
 
   music.play()
   game.time.events.loop(133000, restartMusic, this)
-  if (phaser.device.desktop){
+  if (phaser.device.android){
     pad = game.plugins.add(Phaser.VirtualJoystick);
     stick = pad.addDPad(0,0,200, 'dpad');
     stick.alignBottomLeft(0);
