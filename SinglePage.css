@@ -357,4 +357,12 @@ a:hover {
 ol {
   list-style-type: upper-alpha;
 }
+
+.button {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  text-align: center;
+  float: right;
+}
 /* ADD LOBBY MUSIC TO WEBSITE */
