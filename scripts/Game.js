@@ -56,7 +56,6 @@ var background;
 var shiftkey;
 var nextDialogueKey;
 var wallJumpCounter = 0;
-var music;
 var loopCount = 0;
 var buttonGroup
 var speedMod = 1
