@@ -13,7 +13,6 @@ function restartMusic(){
 }
 
 function preload() {
-  console.log("running preload")
   // load all the game assest in before we create the stage 
   game.load.image('ground','images/100x100.png');
   game.load.image('ground2', 'images/200x100.png')
@@ -64,7 +63,6 @@ var pressCounter = 0
 var stick;
 
 function create() {
-console.log("running create")
   //  create an object to capture all the keyboard input 
   cursors = game.input.keyboard.createCursorKeys();
   shiftkey = game.input.keyboard.addKey(Phaser.Keyboard.SHIFT);
@@ -116,7 +114,7 @@ console.log("running create")
   initTriggers(triggers);
 
   music.play()
-  game.time.events.loop(77500, restartMusic, this)
+  game.time.events.loop(80000, restartMusic, this)
   pad = game.plugins.add(Phaser.VirtualJoystick);
   stick = pad.addDPad(0,0,200, 'dpad');
   stick.alignBottomLeft(0);
@@ -153,7 +151,6 @@ function spaceReplace(){
 
 
 function update() {
-  console.log("running update")
   if(game.device.desktop){
     stick.visible = false
     buttonJump.visible = false 
