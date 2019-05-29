@@ -9,6 +9,7 @@ var game = new Phaser.Game(GAME_WIDTH, GAME_HEIGHT, Phaser.CANVAS, 'game-stage',
 
 function restartMusic(){
   music.restart()
+  console.log("restart music")
 }
 
 function preload() {
