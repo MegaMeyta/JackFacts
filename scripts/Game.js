@@ -115,7 +115,7 @@ console.log("running create")
   initTriggers(triggers);
 
   music.play()
-  game.time.events.loop(133000, restartMusic, this)
+  game.time.events.loop(77500, restartMusic, this)
   pad = game.plugins.add(Phaser.VirtualJoystick);
   stick = pad.addDPad(0,0,200, 'dpad');
   stick.alignBottomLeft(0);
